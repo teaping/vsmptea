@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BDAECA3-D49D-42C8-86F3-E39DEE43ED6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChaLou</RootNamespace>
+    <AssemblyName>ChaLou</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin4, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=127be25a6db25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\微信存储\图书管理系统\Demo_1\Demo_1\bin\Debug\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BangDzhok.cs" />
+    <Compile Include="ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCwGl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCwGl.Designer.cs">
+      <DependentUpon>FrmCwGl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuanYu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuanYu.Designer.cs">
+      <DependentUpon>FrmGuanYu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHouTai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHouTai.Designer.cs">
+      <DependentUpon>FrmHouTai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHuiYuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHuiYuan.Designer.cs">
+      <DependentUpon>FrmHuiYuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHuYuCz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHuYuCz.Designer.cs">
+      <DependentUpon>FrmHuYuCz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHuYuMia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHuYuMia.Designer.cs">
+      <DependentUpon>FrmHuYuMia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJc.Designer.cs">
+      <DependentUpon>FrmJc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBTjz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBTjz.Designer.cs">
+      <DependentUpon>FrmBTjz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBTxs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBTxs.Designer.cs">
+      <DependentUpon>FrmBTxs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJcSl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJcSl.Designer.cs">
+      <DependentUpon>FrmJcSl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJiaoBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJiaoBan.Designer.cs">
+      <DependentUpon>FrmJiaoBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJz.Designer.cs">
+      <DependentUpon>FrmJz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpjc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpjc.Designer.cs">
+      <DependentUpon>FrmSpjc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpQc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpQc.Designer.cs">
+      <DependentUpon>FrmSpQc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpXsCx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpXsCx.Designer.cs">
+      <DependentUpon>FrmSpXsCx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSuoPing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSuoPing.Designer.cs">
+      <DependentUpon>FrmSuoPing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTj.Designer.cs">
+      <DependentUpon>FrmTj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXtDgFw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXtDgFw.Designer.cs">
+      <DependentUpon>FrmXtDgFw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXtDgtj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXtDgtj.Designer.cs">
+      <DependentUpon>FrmXtDgtj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXtFjTj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXtFjTj.Designer.cs">
+      <DependentUpon>FrmXtFjTj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXtFwsTj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXtFwsTj.Designer.cs">
+      <DependentUpon>FrmXtFwsTj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXtFwsTjS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXtFwsTjS.Designer.cs">
+      <DependentUpon>FrmXtFwsTjS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXtSz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXtSz.Designer.cs">
+      <DependentUpon>FrmXtSz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXtTjSp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXtTjSp.Designer.cs">
+      <DependentUpon>FrmXtTjSp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXtXg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXtXg.Designer.cs">
+      <DependentUpon>FrmXtXg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXtZzyTj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXtZzyTj.Designer.cs">
+      <DependentUpon>FrmXtZzyTj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYdGl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYdGl.Designer.cs">
+      <DependentUpon>FrmYdGl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYinYe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYinYe.Designer.cs">
+      <DependentUpon>FrmYinYe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYinYeJzCx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYinYeJzCx.Designer.cs">
+      <DependentUpon>FrmYinYeJzCx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYinYeLaiBin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYinYeLaiBin.Designer.cs">
+      <DependentUpon>FrmYinYeLaiBin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYinYeNianXs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYinYeNianXs.Designer.cs">
+      <DependentUpon>FrmYinYeNianXs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYinYeTuiD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYinYeTuiD.Designer.cs">
+      <DependentUpon>FrmYinYeTuiD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYinYeXfMx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYinYeXfMx.Designer.cs">
+      <DependentUpon>FrmYinYeXfMx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYinYeYuex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYinYeYuex.Designer.cs">
+      <DependentUpon>FrmYinYeYuex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYuDingDJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYuDingDJ.Designer.cs">
+      <DependentUpon>FrmYuDingDJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZhuanT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZhuanT.Designer.cs">
+      <DependentUpon>FrmZhuanT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZj.Designer.cs">
+      <DependentUpon>FrmZj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZjHuiYun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZjHuiYun.Designer.cs">
+      <DependentUpon>FrmZjHuiYun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuanSz\GuolvCk.cs" />
+    <Compile Include="GuanSz\JzGuoBd.cs" />
+    <Compile Include="GuanSz\Moues.cs" />
+    <Compile Include="GuanSz\XtTj.cs" />
+    <Compile Include="GuanSz\YanZhengMa.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SJTime.cs" />
+    <Compile Include="Treelb.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCwGl.resx">
+      <DependentUpon>FrmCwGl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuanYu.resx">
+      <DependentUpon>FrmGuanYu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHouTai.resx">
+      <DependentUpon>FrmHouTai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHuiYuan.resx">
+      <DependentUpon>FrmHuiYuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHuYuCz.resx">
+      <DependentUpon>FrmHuYuCz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHuYuMia.resx">
+      <DependentUpon>FrmHuYuMia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJc.resx">
+      <DependentUpon>FrmJc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBTjz.resx">
+      <DependentUpon>FrmBTjz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBTxs.resx">
+      <DependentUpon>FrmBTxs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJcSl.resx">
+      <DependentUpon>FrmJcSl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJiaoBan.resx">
+      <DependentUpon>FrmJiaoBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJz.resx">
+      <DependentUpon>FrmJz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpjc.resx">
+      <DependentUpon>FrmSpjc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpQc.resx">
+      <DependentUpon>FrmSpQc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpXsCx.resx">
+      <DependentUpon>FrmSpXsCx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSuoPing.resx">
+      <DependentUpon>FrmSuoPing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTj.resx">
+      <DependentUpon>FrmTj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXtDgFw.resx">
+      <DependentUpon>FrmXtDgFw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXtDgtj.resx">
+      <DependentUpon>FrmXtDgtj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXtFjTj.resx">
+      <DependentUpon>FrmXtFjTj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXtFwsTj.resx">
+      <DependentUpon>FrmXtFwsTj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXtFwsTjS.resx">
+      <DependentUpon>FrmXtFwsTjS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXtSz.resx">
+      <DependentUpon>FrmXtSz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXtTjSp.resx">
+      <DependentUpon>FrmXtTjSp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXtXg.resx">
+      <DependentUpon>FrmXtXg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXtZzyTj.resx">
+      <DependentUpon>FrmXtZzyTj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYdGl.resx">
+      <DependentUpon>FrmYdGl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYinYe.resx">
+      <DependentUpon>FrmYinYe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYinYeJzCx.resx">
+      <DependentUpon>FrmYinYeJzCx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYinYeLaiBin.resx">
+      <DependentUpon>FrmYinYeLaiBin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYinYeNianXs.resx">
+      <DependentUpon>FrmYinYeNianXs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYinYeTuiD.resx">
+      <DependentUpon>FrmYinYeTuiD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYinYeXfMx.resx">
+      <DependentUpon>FrmYinYeXfMx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYinYeYuex.resx">
+      <DependentUpon>FrmYinYeYuex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYuDingDJ.resx">
+      <DependentUpon>FrmYuDingDJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZhuanT.resx">
+      <DependentUpon>FrmZhuanT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZj.resx">
+      <DependentUpon>FrmZj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZjHuiYun.resx">
+      <DependentUpon>FrmZjHuiYun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bin\Debug\Skins\Calmness.ssk" />
+    <None Include="bin\Debug\Skins\CalmnessColor1.ssk" />
+    <None Include="bin\Debug\Skins\CalmnessColor2.ssk" />
+    <None Include="bin\Debug\Skins\DeepCyan.ssk" />
+    <None Include="bin\Debug\Skins\DeepGreen.ssk" />
+    <None Include="bin\Debug\Skins\DeepOrange.ssk" />
+    <None Include="bin\Debug\Skins\DiamondBlue.ssk" />
+    <None Include="bin\Debug\Skins\DiamondGreen.ssk" />
+    <None Include="bin\Debug\Skins\DiamondOlive.ssk" />
+    <None Include="bin\Debug\Skins\DiamondPurple.ssk" />
+    <None Include="bin\Debug\Skins\DiamondRed.ssk" />
+    <None Include="bin\Debug\Skins\Eighteen.ssk" />
+    <None Include="bin\Debug\Skins\EighteenColor1.ssk" />
+    <None Include="bin\Debug\Skins\EighteenColor2.ssk" />
+    <None Include="bin\Debug\Skins\Emerald.ssk" />
+    <None Include="bin\Debug\Skins\EmeraldColor1.ssk" />
+    <None Include="bin\Debug\Skins\EmeraldColor2.ssk" />
+    <None Include="bin\Debug\Skins\EmeraldColor3.ssk" />
+    <None Include="bin\Debug\Skins\GlassBrown.ssk" />
+    <None Include="bin\Debug\Skins\GlassGreen.ssk" />
+    <None Include="bin\Debug\Skins\GlassOrange.ssk" />
+    <None Include="bin\Debug\Skins\Longhorn.ssk" />
+    <None Include="bin\Debug\Skins\MacOS.ssk" />
+    <None Include="bin\Debug\Skins\Midsummer.ssk" />
+    <None Include="bin\Debug\Skins\MidsummerColor1.ssk" />
+    <None Include="bin\Debug\Skins\MidsummerColor2.ssk" />
+    <None Include="bin\Debug\Skins\MidsummerColor3.ssk" />
+    <None Include="bin\Debug\Skins\mp10.ssk" />
+    <None Include="bin\Debug\Skins\mp10green.ssk" />
+    <None Include="bin\Debug\Skins\mp10maroon.ssk" />
+    <None Include="bin\Debug\Skins\mp10mulberry.ssk" />
+    <None Include="bin\Debug\Skins\mp10pink.ssk" />
+    <None Include="bin\Debug\Skins\mp10purple.ssk" />
+    <None Include="bin\Debug\Skins\MSN.ssk" />
+    <None Include="bin\Debug\Skins\office2007.ssk" />
+    <None Include="bin\Debug\Skins\OneBlue.ssk" />
+    <None Include="bin\Debug\Skins\OneCyan.ssk" />
+    <None Include="bin\Debug\Skins\OneGreen.ssk" />
+    <None Include="bin\Debug\Skins\OneOrange.ssk" />
+    <None Include="bin\Debug\Skins\Page.ssk" />
+    <None Include="bin\Debug\Skins\PageColor1.ssk" />
+    <None Include="bin\Debug\Skins\PageColor2.ssk" />
+    <None Include="bin\Debug\Skins\RealOne.ssk" />
+    <None Include="bin\Debug\Skins\Silver.ssk" />
+    <None Include="bin\Debug\Skins\SilverColor1.ssk" />
+    <None Include="bin\Debug\Skins\SilverColor2.ssk" />
+    <None Include="bin\Debug\Skins\SportsBlack.ssk" />
+    <None Include="bin\Debug\Skins\SportsBlue.ssk" />
+    <None Include="bin\Debug\Skins\SportsCyan.ssk" />
+    <None Include="bin\Debug\Skins\SportsGreen.ssk" />
+    <None Include="bin\Debug\Skins\SportsOrange.ssk" />
+    <None Include="bin\Debug\Skins\SteelBlack.ssk" />
+    <None Include="bin\Debug\Skins\SteelBlue.ssk" />
+    <None Include="bin\Debug\Skins\vista1.ssk" />
+    <None Include="bin\Debug\Skins\vista1_green.ssk" />
+    <None Include="bin\Debug\Skins\Vista2_color1.ssk" />
+    <None Include="bin\Debug\Skins\Vista2_color2.ssk" />
+    <None Include="bin\Debug\Skins\Vista2_color3.ssk" />
+    <None Include="bin\Debug\Skins\Vista2_color4.ssk" />
+    <None Include="bin\Debug\Skins\Vista2_color5.ssk" />
+    <None Include="bin\Debug\Skins\Vista2_color6.ssk" />
+    <None Include="bin\Debug\Skins\Vista2_color7.ssk" />
+    <None Include="bin\Debug\Skins\Warm.ssk" />
+    <None Include="bin\Debug\Skins\WarmColor1.ssk" />
+    <None Include="bin\Debug\Skins\WarmColor2.ssk" />
+    <None Include="bin\Debug\Skins\WarmColor3.ssk" />
+    <None Include="bin\Debug\Skins\Wave.ssk" />
+    <None Include="bin\Debug\Skins\WaveColor1.ssk" />
+    <None Include="bin\Debug\Skins\WaveColor2.ssk" />
+    <None Include="bin\Debug\Skins\XPBlue.ssk" />
+    <None Include="bin\Debug\Skins\XPGreen.ssk" />
+    <None Include="bin\Debug\Skins\XPOrange.ssk" />
+    <None Include="bin\Debug\Skins\XPSilver.ssk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\IrisSkin4.dll" />
+    <Content Include="bin\Debug\MPcLou.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
